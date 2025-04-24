@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/DCMSDEV
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+    
+logging:
+  level:
+    root: info
+    com.lacheln.dcms: debug
+    
+  file:
+    name: D:/Spring_Boot_Workspace/lachelnDCMS.log
+    
+server:
+  port: 9090
+  
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
+
+ 
+    
